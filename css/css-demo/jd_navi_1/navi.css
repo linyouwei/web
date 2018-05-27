@@ -51,6 +51,18 @@
     border-top:none;
     position: absolute;
 }
+.close{
+    position: absolute;
+    left: 706px;
+    width: 26px;
+    height: 26px;
+    background: #555;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;/*水平方向居中*/
+    line-height: 26px;
+    font-family: Arial;
+}
 
 .sub_cate{
     position: absolute;
@@ -64,6 +76,7 @@
     z-index: 2;
 }
 .cate_line a{
+    color:black;
     text-decoration: none;
 }
 .cate_line h3{
