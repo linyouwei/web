@@ -28,14 +28,91 @@ body{
     height: 33px;
     line-height: 33px;
 }
-#jd_logo{
-    background-image: url("../css-demo/images/jd_logo.png");
-    background-repeat: no-repeat;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 200px;
-    vertical-align: middle;
+
+#header {
+    padding: 10px 0;
+}
+.welcome{
+    border-left: 1px solid #eee;
 }
 #header span{
     font-size:2em;
+}
+#content{
+    /*background:#fff ; 如果这里写backgroud会和下方的backgroud冲突，去掉该backgroud*/
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border: 1px solid #ddd;
+    border-top:none;
+    background: url("images/reg_phone.jpg") no-repeat 770px 40px #fff;
+    height: 400px;
+}
+.line{
+    width: 750px;
+    height: 60px;
+    padding-top: 9px;
+}
+/*加了float，使span变成块元素，可以使用weight和height*/
+.line span{
+    float: left;
+    height: 34px;
+    line-height: 34px;
+}
+.text{
+    width: 190px;
+    text-align: right;
+    font-size: 14px;
+    color: #999;
+    padding-right: 10px;
+}
+.text b{
+    color: #ff0000;
+    margin-right: 5px;
+}
+.kuang1{
+    width: 238px;
+    height: 16px;
+    color: #999;
+    padding: 10px 25px 10px 5px;
+    border: 1px solid #ddd;
+    background-position:248px center;
+    background-repeat: no-repeat;
+}
+.reg{
+   width: 270px;
+   margin: 0 auto;
+}
+.yanzheng{
+    width: 100px;
+}
+.user{
+    background-image: url(images/user.jpg);
+}
+.pwd{
+    background-image: url(images/pwd.jpg);
+}
+.phone{
+    background-image: url(images/phone.jpg);
+}
+.inp_reg{
+    width: 270px;
+    height: 36px;
+    background-image: url(images/regist_btn.jpg);
+}
+.dsp{
+    background:#f7f7f7 ;
+    border: 1px solid #ddd;
+    width: 238px;
+    line-height: 34px;
+    padding: 1px 5px;
+    margin-left: 5px;
+}
+.verify{
+    color: #999;
+    width: 100px;
+}
+
+.kuang1:focus{
+    border-color:#7abd54;
+    outline: none;
 }
