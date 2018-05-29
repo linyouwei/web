@@ -22,6 +22,11 @@ a:hover{
     text-decoration: underline;
     color: #e4393c;
 }
+s,u{
+    /*删除线也是一种text-decoration,设为none就可以去掉*/
+    text-decoration: none;
+}
+
 /*以下元素都是定宽*/
 .wrap,#header,#navi,#content,#footer{
     width: 1210px;
@@ -42,7 +47,8 @@ a:hover{
     color: #ff0700;
 }
 #shoucang{
-    width:80;
+    width:80px;
+    float: left;
 }
 #shoucang img{
     margin: 0 4px;
@@ -51,7 +57,54 @@ a:hover{
 .h1_right{
     float: right;
 }
+#user{
+    float: left;
+}
+.devider {
+    color: #ccc;
+    margin: 0 3px;
+    float: left;
 
+}
+#h1_content{
+    float: left;
+}
+#h1_content a{
+    float: left;
+}
+#service{
+    float: left;
+}
+
+.vip{
+    background: url(../images/vip.jpg) no-repeat;
+    background-position: left 9px;
+    padding-left: 27px;
+
+}
+.dakehu{
+    background: url(../images/dakehu.jpg) no-repeat;
+    background-position: left 9px;
+    padding-left: 30px;
+
+}
+.phone{
+    background: url("../images/iconlist_2.png") no-repeat -127px -356px;
+    padding-left: 19px;
+}
+.phone:hover{
+    /*不要再设置为backgroud*/
+    background-position: -127px -395px;
+}
+
+#service>a{
+    background:url("../images/jt_down.jpg") no-repeat right center ;
+    padding-right: 12px;
+    border: 1px solid #ddd;
+}
+#service>a:hover{
+    background-image: url("../images/jt_up.jpg");
+}
 /***** header的样式 ********/
 
 #header{

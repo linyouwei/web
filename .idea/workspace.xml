@@ -2,96 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07b0a7b4-623b-4fc5-aa5d-a6095905621a" name="Default" comment="京东注册">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/537b3130N7591211b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/537b3138N3205302e.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/537b3152Nf0573a0d.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/537b316bN35574fff.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/537b3173Ne74bf3cf.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/53829f6eNa98427dc.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/5464795dN8179a200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/546ab63aNaa4d5732.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/54caf3a2N56357d7c.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/ad-arraw-hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/ad-arraw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/ad_01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/ad_02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/ad_03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/ad_focus.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/ad_small_01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/ad_small_02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/ad_small_03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/app_jd_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/app_jd_erwei.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/app_jd_wangyin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/banner_01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/banner_02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/cantuan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/cate_banner_01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/cate_banner_02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/cx.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/cy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/dakehu.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/email.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/fl_01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/fl_ad_01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/fl_ad_02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/fl_dl_01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/fl_dl_02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/fl_dl_03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/fl_dl_04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/fl_dl_05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/fl_dl_06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/fl_dl_07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/gw01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/gwc.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/iconlist_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/iconlist_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/iconlist_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/index_iconlist_01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/input.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/input01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/jd.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/jt.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/jt_down.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/jt_up.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/jtr.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/jwy_03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/jy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/kx.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/link_arraw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/logo-201305.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/nav_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/phone.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/ps02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/rBEQWVFQLqgIAAAAAAAFbgvhBqMAAC0MAP_3cIAAAWG414.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/rBEbRlN5zCsIAAAAAAALfFfJRv8AACGGgO__3sAAAuU660.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/rBEhUlHmCN0IAAAAAAASpGQ8IDYAABK2AP_yHEAABK8207.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/reading.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/search.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/images/search_01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/images/search_02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/images/search_04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/images/search_05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/sh04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/share_01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/share_02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/show_01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/show_02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/show_03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/show_04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/show_05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/show_06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/show_07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/show_08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/star.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/tab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/tab_arraw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/ts05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/vip.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/virtuals-20140606.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/index/virtuals_arraw.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/youjiantou.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/css_project/jd_project/images/zf03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/position/float_problem.html" afterPath="$PROJECT_DIR$/css/position/float_problem.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/css_project/jd_project/css/product.css" afterPath="$PROJECT_DIR$/css/css_project/jd_project/css/product.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/css_project/jd_project/product.html" afterPath="$PROJECT_DIR$/css/css_project/jd_project/product.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="f3fcfb1e-8b52-4595-8bc0-6697135873b0" name="Rejected commit: Default" comment="京东注册" />
@@ -116,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="product.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="product.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/css_project/jd_project/css/product.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="554" max-vertical-offset="1500">
-              <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+            <state vertical-scroll-proportion="-0.5657754" vertical-offset="1269" max-vertical-offset="2560">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -129,28 +42,18 @@
       <file leaf-file-name="product.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/css_project/jd_project/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.206897" vertical-offset="0" max-vertical-offset="580">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state vertical-scroll-proportion="-5.5172415" vertical-offset="0" max-vertical-offset="1100">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="float-absolute.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/position/float-absolute.html">
+      <file leaf-file-name="jd-navi.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/css_project/jd_navi_1/jd-navi.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.793103" vertical-offset="14" max-vertical-offset="860">
-              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="float_problem.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/position/float_problem.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41615668" vertical-offset="0" max-vertical-offset="817">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+            <state vertical-scroll-proportion="-3.275862" vertical-offset="125" max-vertical-offset="1060">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -169,7 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/position/float_problem.html" />
         <option value="$PROJECT_DIR$/css/position/position_demo.html" />
         <option value="$PROJECT_DIR$/css/position/relative_problem.html" />
         <option value="$PROJECT_DIR$/css/position/absolute_demo.html" />
@@ -189,16 +91,23 @@
         <option value="$PROJECT_DIR$/css/css-demo/navi.css" />
         <option value="$PROJECT_DIR$/css/css-demo/jd_navi_1/jd-navi.html" />
         <option value="$PROJECT_DIR$/css/css-demo/jd_navi_1/navi.css" />
+        <option value="$PROJECT_DIR$/css/position/float_test.html" />
+        <option value="$PROJECT_DIR$/css/position/float_problem.html" />
+        <option value="$PROJECT_DIR$/css/position/float_divfloat_divtext.html" />
+        <option value="$PROJECT_DIR$/css/position/float_divabsolute_divtext.html" />
+        <option value="$PROJECT_DIR$/css/position/float_div_a_span.html" />
+        <option value="$PROJECT_DIR$/css/position/float_div_span_float_div_problem.html" />
         <option value="$PROJECT_DIR$/css/css_project/jd_project/product.html" />
+        <option value="$PROJECT_DIR$/css/backgroud-image-demo/backgroud-a.html" />
         <option value="$PROJECT_DIR$/css/css_project/jd_project/css/product.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="868" />
-    <option name="y" value="38" />
-    <option name="width" value="1109" />
-    <option name="height" value="984" />
+    <option name="x" value="857" />
+    <option name="y" value="14" />
+    <option name="width" value="1177" />
+    <option name="height" value="1073" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -226,6 +135,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -334,32 +244,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jd_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weblearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weblearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="jd_navi_1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -406,7 +290,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -417,11 +300,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\linyouwei\weblearn\css\backgroud-image-demo\images" />
+      <recent name="D:\linyouwei\weblearn\css\backgroud-image-demo" />
+      <recent name="D:\linyouwei\weblearn\css\position" />
       <recent name="D:\linyouwei\weblearn\css\css_project\jd_project\images" />
       <recent name="D:\linyouwei\weblearn\css" />
-      <recent name="D:\linyouwei\web\css\css-demo\images" />
-      <recent name="D:\linyouwei\web\css\css-demo" />
-      <recent name="D:\linyouwei\web\css\backgroud2\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\linyouwei\weblearn\css\css-demo\jd_navi_1" />
@@ -432,14 +315,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -450,14 +325,12 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
       <option name="filePath" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -465,6 +338,16 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -488,14 +371,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="868" y="38" width="1109" height="984" extended-state="0" />
+    <frame x="857" y="14" width="1177" height="1073" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17749314" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19035314" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -503,12 +386,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32446265" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32958034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -533,36 +416,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/css_project/jd_navi_1/jd-navi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="1040">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/css_project/jd_navi_1/navi.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1400" max-vertical-offset="2340">
-          <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/css_project/jd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3800" max-vertical-offset="4360">
-          <caret line="190" column="58" selection-start-line="190" selection-start-column="58" selection-end-line="190" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/position/float_problem.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="740">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/position/absolute_demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="640" max-vertical-offset="1020">
@@ -810,46 +663,111 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7829546" vertical-offset="131" max-vertical-offset="1040">
           <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/css_project/jd_navi_1/jd-navi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.374541" vertical-offset="214" max-vertical-offset="1060">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/css_project/jd_project/css/product.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="554" max-vertical-offset="1500">
-          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/css_project/jd_project/product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.206897" vertical-offset="0" max-vertical-offset="580">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/position/float-absolute.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.793103" vertical-offset="14" max-vertical-offset="860">
+        <state vertical-scroll-proportion="0.28144458" vertical-offset="14" max-vertical-offset="860">
           <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/position/float_test_left_right.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40302268" vertical-offset="0" max-vertical-offset="840">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/position/float_problem.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41615668" vertical-offset="0" max-vertical-offset="817">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.19607843" vertical-offset="0" max-vertical-offset="816">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/position/float_divfloat_divtext.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6813725" vertical-offset="24" max-vertical-offset="840">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/position/float_divabsolute_divtext.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0996264" vertical-offset="0" max-vertical-offset="803">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/position/float_div_span_float_div_problem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4095563" vertical-offset="0" max-vertical-offset="1060">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/backgroud-image-demo/backgroud-star.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5172415" vertical-offset="0" max-vertical-offset="500">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/backgroud-image-demo/backgroud.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/backgroud-image-demo/images/iconlist_1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/backgroud-image-demo/images/jd_logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/backgroud-image-demo/backgroud-a.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.034483" vertical-offset="0" max-vertical-offset="600">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/css_project/jd_navi_1/jd-navi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.275862" vertical-offset="125" max-vertical-offset="1060">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/css_project/jd_project/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5172415" vertical-offset="0" max-vertical-offset="1100">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/css_project/jd_project/css/product.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5657754" vertical-offset="1269" max-vertical-offset="2560">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>
