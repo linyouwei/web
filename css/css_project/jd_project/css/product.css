@@ -504,7 +504,62 @@ s,u{
 }
 #suoluetu ul{
     width: 520px;
-
+}
+.prd_title{
+    width: 840px;
+    font:700 16px/1.5em Arial,Verdana,"微软雅黑"/*font-weight：700， 1.5倍行高 */
+}
+.prd_title dd{
+    color: #e4393c;
+}
+.prd_text{
+    width: 600px;
+    padding: 10px 0;
+    line-height: 18px;
+}
+.prd_text a{
+    color: #005aa0;
+}
+.prd_line{
+    padding: 6px 0;
+    clear: both;
+}
+.prd_left,.prd_right{
+    float:left;
+}
+.prd_left{
+    width: 72px;
+    font-family: simsun;
+    text-align: right;
+    height: 23px;
+    line-height: 23px;
+}
+.prd_right{
+    margin-left:5px ;
+    line-height: 23px;
+}
+#price{
+    color: #e4393c;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "宋体,Arial";
+}
+#prd_stars{
+    margin: 1px 5px 0 0;
+    background: url("../images/iconlist_1.png")  no-repeat -109px -239px;
+    width: 75px;
+    height: 14px;
+    display: inline-block;
+}
+.prd_text .liuyan{
+    margin: -1px 0 0 5px;
+    padding-left: 27px;
+    height: 24px;
+    width: 59px;
+    color: #ccc;
+    background: url("../images/words.png") no-repeat;
+    display: inline-block;
+    vertical-align: top;
 }
 
 
