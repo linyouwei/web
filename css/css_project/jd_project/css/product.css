@@ -433,7 +433,6 @@ s,u{
 }
 .prd_content{
     width: 600px;
-    border: 1px solid blue;
     height: 400px;/*临时高度*/
     margin-left: 360px;/*关键点*/
 }
@@ -522,7 +521,7 @@ s,u{
 }
 .prd_line{
     padding: 6px 0;
-    clear: both;
+    height: 23px;
 }
 .prd_left,.prd_right{
     float:left;
@@ -559,9 +558,100 @@ s,u{
     color: #ccc;
     background: url("../images/words.png") no-repeat;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: top;/*加了vertical-align，使用margin-top时不会影响到其他的行内元素，*/
+}
+#dizhi,.dz_text{
+    float: left;
+}
+#youhuo{
+    font-size: 14px;
+    font-weight: bold;
+}
+#dizhi_kuang{
+    height: 23px;
+    background: #fff;
+    border: 1px solid #cecfce;
+    padding: 0 20px 0 4px;
+    margin-right:6px ;
+    position: relative;
+    z-index: 10;
+}
+#dizhi_kuang i{
+    width: 17px;
+    height: 24px;
+    position: absolute;
+    top:0;
+    right: 0;
+    background: url("../images/iconlist_1.png") no-repeat -264px -188px;
+}
+#dizhi{
+    position: relative;
+}
+#dizhi_pop{
+    position: absolute;/*行内元素加了absolute 就可以变成块元素，就可以设置宽高*/
+    top:25px;
+    left: -45px;
+    border: 1px solid #cecfce;
+    width: 390px;
+    padding: 15px;
+    height: 200px;/*临时高度*/
+    background: #fff;
+    box-shadow: 0px 0px 5px #ddd;
+    display: none;
 }
 
+#dizhi_kuang:hover{
+    border-bottom: 3px solid #fff;
+    z-index: 5;/*dizhi_kuang的层叠顺序在dizhi_pop的上面*/
+
+}
+.dizhi_x{
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 17px;
+    height: 17px;
+    background: url("../images/iconlist_1.png") no-repeat -257px -86px;
+}
+#dizhi_tabs{
+    width: 100%;/*不能定宽，因为内容会变化*/
+    height: 26px;
+    border-bottom: 2px solid #edd28b;
+
+}
+#dizhi_tabs li{
+    padding: 0 20px 0 10px;
+    height: 25px;
+    color: #005aa0;
+    line-height: 22px;
+    border: 1px solid #ddd;
+    margin-right: 3px;
+    float: left;/*加了浮动，自适应宽*/
+    position: relative;
+    border-bottom: none;
+
+}
+#dizhi_tabs i{
+    position: absolute;
+    right:4px ;
+    top: 9px;
+    width: 10px;
+    height: 10px;
+    background: url("../images/iconlist_1.png") no-repeat -270px -200px;
+}
+#dizhi_tabs li:hover{
+    border: 2px solid #edd28b;
+    border-bottom-color: #fff;
+    padding: 0 19px 0 9px;
+}
+
+.xianshida,.xiankuan,.ziti{
+    height: 28px;
+    margin-right: 5px;
+    background: url("../images/");
+    
+
+}
 
 
 
