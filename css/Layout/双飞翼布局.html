@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>宽度自适应布局</title>
+    <style>
+        .wrap {
+            background-color: #FBD570;
+            margin-left: 100px;
+            margin-right: 150px;
+        }
+        .clearfix:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .left {
+            float: left;
+            width: 100px;
+            background: #00f;
+            height: 180px;
+            margin-left: calc(-100% - 100px);
+        }
+        .right {
+            float: right;
+            width: 150px;
+            background: #0f0;
+            height: 200px;
+            margin-right: -150px;
+        }
+        .center {
+            background: #B373DA;
+            height: 150px;
+            float: left;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<!--https://www.cnblogs.com/qieguo/p/5421252.html
+1)既然HTML里面要让center放前面，为了让left跑到center前面，那center也必须浮动了，否则因为都是块元素他们会分两行。
+
+2)浮动之后还要让center宽度自适应，那明显width只能100%，然后在父元素中设width:auto，还有两侧margin，其实也就是父对象宽度自适应，center只是继承content的宽度。
+
+3)对left使用负的margin让他们浮动到上方去。
+-->
+<div class="wrap clearfix">
+    <div class="center">center，可以自适应浏览器宽度，高度可固定也可以由内容撑开。</div>
+    <div class="left">left，宽度固定，高度可固定也可以由内容撑开</div>
+    <div class="right">right，宽度固定，高度可固定也可以由内容撑开</div>
+</div>
+</body>
+</html>
