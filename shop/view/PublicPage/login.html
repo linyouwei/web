@@ -20,70 +20,80 @@
 </head>
 <body>
 <div id="doc" class="container">
-    <div id="header" class="navbar">
-        <a href="#" class="navbar-brand"></a>
-        <div class="navbar navbar-title">登录</div>
+    <div id="header" class="navbar-cart">
+        <a href="#" class="back-home"></a>
+        <div class="navbar-title">登录</div>
+        <div class="compile"></div>
     </div>
-    <div class="nowrap-color"></div>
-    <div id="tabs">
-        <div>
-            <a href="#">账号密码登陆</a>
+    <div id="doc-body">
+        <div class="nowrap-color"></div>
+        <ul class="nav nav-tabs">
+            <li class="col-xs-6 "><a data-toggle="tab" href="#login-container"  >账号密码登陆</a></li>
+            <li class="col-xs-6 active"><a data-toggle="tab" href="#quick-container" >手机快捷登陆</a></li>
+        </ul>
+        <div class="nowrap-color"></div>
+        <div class="tab-content">
+            <div id="login-container"class="tab-pane">
+                <form action="" class="form-horizontal form-sm" >
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">手机号:</label>
+                        <div  class="col-xs-9">
+                            <input type="text"class="form-control border-show" placeholder="请输入手机号" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">密码:</label>
+                        <div  class="col-xs-9">
+                            <input  type="password" class="form-control border-show" placeholder="7~21位登录密码"  maxlength="20" autocomplete="off"/>
+                        </div>
+                    </div>
+                    <div class="form-group group-submit">
+                        <div class=" col-xs-12">
+                            <button id="requestSubmit" type="submit" data-tip-object="#login-tip" class="col-xs-12 btn-primary btn-raised border-show" style="color: #fff;">登录</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="register-btn"><a herf="#">注册</a></div>
+                    <div class="forget-btn"><a herf="#">忘记密码</a></div>
+                </div>
+            </div>
+            <div id="quick-container" class="tab-pane active">
+                <form action="" class="form-horizontal form-sm" >
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">手机号:</label>
+                        <div  class="col-xs-9">
+                            <input class="form-control" placeholder="请输入手机号" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">图形验证:</label>
+                        <div  class="col-xs-9">
+                            <input  type="password" class="form-control input-action-password" placeholder="请输入手机号"  maxlength="20" autocomplete="off"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">验证码:</label>
+                        <div  class="col-xs-9">
+                            <input  type="password" class="form-control input-action-password" placeholder="请输入6位验证码"  maxlength="20" autocomplete="off"/>
+                        </div>
+                    </div>
+                    <div class="form-group group-submit">
+                        <div class=" col-xs-12">
+                            <button id="requestLoginSubmit" type="submit" data-tip-object="#login-tip" class="col-xs-12 btn-primary btn-raised" style="color: #fff;">登录</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div>
-            <a href="#">手机快捷登陆</a>
-        </div>
+
+
     </div>
-    <div class="nowrap-color"></div>
-    <div id="loginContent" class="content">
-        <div>
-            <div class="line">
-                <span class="text">手机号<b>:</b></span>
-                <span class="ipt">
-                    <input class="kuang1 mobile" placeholder="请输入手机号" />
-                </span>
-            </div>
-            <div class="line">
-                <span class="text">密码<b>:</b></span>
-                <span class="ipt">
-                    <input class="kuang1 pwd"  placeholder="7~21位登录密码" />
-                </span>
-            </div>
-        </div>
-        <div class="login-btn">
-            <button>登录</button>
-        </div>
-        <div class="register-link">
-            <a href="#" class="register-btn">注册</a>
-            <a href="#"  class="forget-btn">忘记密码</a>
-        </div>
-    </div>
-    <div id="quick-content" class="content">
-        <div>
-            <div class="line">
-                <span class="text">手机号<b>:</b></span>
-                <span class="ipt">
-                    <input class="kuang1 mobile" placeholder="请输入手机号" />
-                </span>
-            </div>
-            <div class="line">
-                <span class="text">图形验证<b>:</b></span>
-                <span class="ipt">
-                    <input class="kuang1 pwd"  placeholder="请输入验证码" />
-                </span>
-            </div>
-            <div class="line">
-                <span class="text">验证码<b>:</b></span>
-                <span class="ipt">
-                    <input class="kuang1 pwd"  placeholder="请输入6位验证码" />
-                </span>
-            </div>
-        </div>
-        <div class="login-btn">
-            <button>登录</button>
-        </div>
-    </div>
+
 </div>
 </body>
 <script src="../../jslib/jquery/1.11.2/jquery.min.js"></script>
-<script src="../../run/src/publicpage/login.js"></script>
+<script src="../../jslib/bookstrap/bootstrap.js"></script>
+<script src="../../run/src/PublicPage/login.js"></script>
+
 </html>

@@ -12,12 +12,19 @@
 html {
   font-size: 72px;
 }
-div {
-  border: 1px solid #e4393c;
+.nowrap-color {
+  background: #f2f2f2;
+  height: 8px;
+  width: 100%;
 }
-
-.navbar-title{
-    line-height: .68rem;
-    height:.68rem;
-    text-align: center;
+.form-horizontal .control-label {
+  color: #727272;
+  text-align: left;
+}
+.form-horizontal .form-control {
+  border: none;
+}
+.form-horizontal .form-group {
+  border: none ;
+  border-bottom: 1px solid #e5e5e5;
 }
