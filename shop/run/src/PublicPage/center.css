@@ -4,7 +4,6 @@
 }
 #doc-body .banner-container {
   position: relative;
-  border: 1px solid #000000;
 }
 #doc-body .swiper-container {
   height: 3.36rem;
@@ -19,7 +18,6 @@
   height: .68rem;
   width: 1rem;
   z-index: 1000;
-  border: 1px solid red;
 }
 #doc-body .center-login-content .unlisted .head-pic {
   position: absolute;
@@ -111,7 +109,6 @@
   font-size: 13px ;
 }
 #doc-body .order-content .status-content .status-list {
-  float: left;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -119,4 +116,90 @@
   -ms-flex-direction: column;
   flex-direction: column;
   height: 1.88rem;
+  position: relative;
+}
+#doc-body .order-content .status-content .status-list .status-icon {
+  left: 50%;
+  margin-left: -0.38rem;
+  position: absolute;
+  height: 0.76rem;
+  width: 0.76rem;
+  top: 0.3rem;
+}
+#doc-body .order-content .status-content .status-list .status-type {
+  text-align: center;
+  margin-top: 1.2rem;
+}
+#doc-body .order-content .status-content .status-list .payment-icon {
+  background: url("../image/payment1.png") center no-repeat;
+  background-size: contain;
+}
+#doc-body .order-content .status-content .status-list .shipments-icon {
+  background: url("../image/shipments1.png") center no-repeat;
+  background-size: contain;
+}
+#doc-body .order-content .status-content .status-list .gathering-icon {
+  background: url("../image/gathering1.png") center no-repeat;
+  background-size: contain;
+}
+#doc-body .order-content .status-content .status-list .aftersale-icon {
+  background: url("../image/aftersale1.png") center no-repeat;
+  background-size: contain;
+}
+#doc-body .feature-content {
+  font-size: 13px;
+  margin-top: 0.2rem;
+  padding-bottom: 0.4rem;
+}
+#doc-body .feature-content .list {
+  height: 0.98rem;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  position: relative;
+}
+#doc-body .feature-content .list .icon {
+  height: 0.4rem;
+  width: 0.4rem;
+  position: absolute;
+  left: 0.32rem;
+  top: 0.29rem;
+}
+#doc-body .feature-content .list .list-remark {
+  height: 0.98rem;
+  line-height: 0.98rem;
+  position: absolute;
+  left: 0.88rem;
+  top: 0;
+}
+#doc-body .feature-content .list .right-icon {
+  position: absolute;
+  top: 0;
+  right: 0.32rem;
+  height: 0.98rem;
+  width: 0.5rem;
+  background: url(../image/right.png) right center no-repeat;
+}
+#doc-body .feature-content .list .collect-goods {
+  background: url(../image/collect1.png) center no-repeat;
+  background-size: contain;
+}
+#doc-body .feature-content .list .collect-shop {
+  background: url(../image/shop1.png) center no-repeat;
+  background-size: contain;
+}
+#doc-body .feature-content .list .mycart {
+  background: url(../image/mycart1.png) center no-repeat;
+  background-size: contain;
+}
+#doc-body .feature-content .list .take-address {
+  background: url(../image/address1.png) center no-repeat;
+  background-size: contain;
+}
+#doc-body .feature-content .list .browse {
+  background: url(../image/browse1.png) center no-repeat;
+  background-size: contain;
+}
+#doc-body .feature-content .list .openshop {
+  background: url(../image/openshop1.png) center no-repeat;
+  background-size: contain;
 }

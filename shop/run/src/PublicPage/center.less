@@ -3,7 +3,6 @@
   background-color: #f2f2f2;
   .banner-container{
     position: relative;
-    border: 1px solid #000000;
 
   }
   .swiper-container{
@@ -19,7 +18,6 @@
     height: .68rem;
     width: 1rem;
     z-index: 1000;
-    border: 1px solid red;
   }
   .center-login-content{
     .unlisted{
@@ -118,7 +116,6 @@
       height: 1.88rem;
       font-size:13px ;
       .status-list{
-        float: left;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -126,9 +123,101 @@
         -ms-flex-direction: column;
         flex-direction: column;
         height: 1.88rem;
+        position: relative;
+        .status-icon{
+          left: 50%;
+          margin-left: -0.38rem;
+          position: absolute;
+          height:0.76rem;
+          width: 0.76rem;
+          top:0.3rem;
 
+        }
+        .status-type{
+          text-align: center;
+          margin-top: 1.2rem;
+        }
+        .payment-icon{
+          background: url("../image/payment1.png") center no-repeat; ;
+          background-size:contain;
+        }
+        .shipments-icon{
+          background: url("../image/shipments1.png") center no-repeat; ;
+          background-size:contain;
+        }
+        .gathering-icon{
+          background: url("../image/gathering1.png") center no-repeat; ;
+          background-size:contain;
+        }
+        .aftersale-icon{
+          background: url("../image/aftersale1.png") center no-repeat; ;
+          background-size:contain;
+        }
+
+
+
+      }
+
+
+    }
+  }
+  .feature-content{
+    font-size: 13px;
+    margin-top: 0.2rem;
+    padding-bottom: 0.4rem;
+    .list{
+      height: 0.98rem;
+      border-bottom: 1px solid #ccc;
+      background-color: #fff;
+      position: relative;
+      .icon{
+        height: 0.4rem;
+        width: 0.4rem;
+        position: absolute;
+        left: 0.32rem;
+        top: 0.29rem;
+      }
+      .list-remark{
+        height: 0.98rem;
+        line-height: 0.98rem;
+        position: absolute;
+        left: 0.88rem;
+        top: 0;
+      }
+      .right-icon{
+        position: absolute;
+        top: 0;
+        right: 0.32rem;
+        height: 0.98rem;
+        width: 0.5rem;
+        background:url(../image/right.png) right center no-repeat;
+      }
+      .collect-goods{
+        background:url(../image/collect1.png) center no-repeat;
+        background-size:contain;
+      }
+      .collect-shop{
+        background:url(../image/shop1.png) center no-repeat;
+        background-size:contain;
+      }
+      .mycart{
+        background:url(../image/mycart1.png) center no-repeat;
+        background-size:contain;
+      }
+      .take-address{
+        background:url(../image/address1.png) center  no-repeat;
+        background-size:contain;
+      }
+      .browse{
+        background:url(../image/browse1.png) center  no-repeat;
+        background-size:contain;
+      }
+      .openshop{
+        background:url(../image/openshop1.png) center  no-repeat;
+        background-size:contain;
       }
 
     }
   }
+
 }
