@@ -15,5 +15,12 @@ $(function(){
             el: '.swiper-pagination',
         },
     });
+    $(".shop-classify").click(function(e){
+        e.stopPropagation();
+        $('.classify-content').stop(true).animate({width:'6rem'},100,function(){
+            $('html,body').addClass('overflowHiden');
+            $('#mask-body').removeClass('hidden');
+        });
+    });
 
 })

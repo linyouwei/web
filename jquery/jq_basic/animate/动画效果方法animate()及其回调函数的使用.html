@@ -22,8 +22,8 @@
   <br><br>
   <div></div>
   <script>
-	$("button").click(function(){
-		/*
+	$("button").click(function() {
+        /*
 		 * animate(params,options)
 		 * * params - 设置动画的样式(CSS属性)
 		 *   * 写法 - {attrName:attrValue}
@@ -35,17 +35,12 @@
 		 *     * complete - 动画执行完毕后的函数
 		 *     * queue - 设定为false将使此动画不进入动画队列 
 		 */
-		$("div").animate({
-			"width" : 50
-		},{
-			"duration" : 300
-		}).animate({
-			"height" : 50
-		},{
-			"duration" : 300,
-			"queue" : false
-		});
-	});
+		$("div"
+        ).animate({width:'50px'}).animate({
+                    height:'50px'},function(){
+                    alert('1234');
+                });
+        });
   </script>
  </body>
 </html>
