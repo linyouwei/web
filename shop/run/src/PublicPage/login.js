@@ -2,7 +2,6 @@ $(function(){
     var getParams = getArgs();
     var shop = getParams.shop;
     var login = getParams.login;
-    console.log('123:'+login);
     var originalhref = $('#header a').attr('href');
     console.log(originalhref);
     $('#header a').attr('href',originalhref+'?shop='+shop);
@@ -14,7 +13,7 @@ $(function(){
     $('.forget-btn a').attr('href',originalhref+'?shop='+shop);
     var storage = window.localStorage;
     var today = new Date().getTime();
-  /*  $('#login-container').inputValidate({
+   $('#login-container').inputValidate({
         submit: {
             query: '#requestSubmit'
         },
@@ -24,7 +23,7 @@ $(function(){
             message: window.commonRegexp.password.message,
             emptyMessage: window.commonRegexp.password.emptyMessage
         }]
-    });*/
+    });
     //账号密码登陆
     $("#requestSubmit").click(function(){
         var submitBtn = $("#requestSubmit");
@@ -33,7 +32,8 @@ $(function(){
         params.password = $('#requestPassword').val();
         params.areaCode = '86';
         toggleLoading(true);
-    /*    ajaxRequest('http://booking.uclbrt.com/api/user/login', params, 'post', function (data) {
+        var local_path = 'http://localhost:1200/';
+        ajaxRequest(local_path+'/api/user/login', params, 'post', function (data) {
             toggleLoading(false);
             if (typeof storage === 'object') {
                 try {
@@ -50,22 +50,9 @@ $(function(){
         }, function (error, obj, defaultErrorHandler) {
             toggleLoading(false);
             defaultErrorHandler(error, obj);
-        }, submitBtn);*/
+        }, submitBtn);
 
-      /*  var url = 'http://booking.uclbrt.com/api/user/login'
-        console.log(params);
-        $.ajax({
-            url:url,
-            data: params,
-            async:true,
-            type: 'post',
-            dataType: 'jsonp',
-            jsonp: "callbackparam",
-            crossDomain: true,
-            success: function (data) {
-                console.log(params);
-            }
-        });*/
+
 
     });
 

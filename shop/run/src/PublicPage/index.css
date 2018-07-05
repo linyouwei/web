@@ -253,8 +253,70 @@
   position: fixed;
   width: 6rem;
   height: 100%;
-  background: #daffb5;
+  background: #fff;
   top: 0;
   z-index: 10000;
   transition: all .3s ease;
+}
+.classify-content .classify-box {
+  width: 5.36rem;
+  height: 100%;
+  padding: 0.3rem 0.32rem;
+}
+.classify-content .search-content {
+  width: 100%;
+  height: 0.58rem;
+  margin-bottom: 0.26rem;
+}
+.classify-content .search-content input {
+  float: left;
+  border: 0;
+  outline: none;
+  background: #EEEEEE;
+  height: 0.58rem;
+  width: 3.5rem;
+  color: #a9a9a9;
+  line-height: 0.58rem ;
+  text-indent: 12px;
+}
+.classify-content .search-content .search {
+  float: right;
+  width: 0.88rem;
+  height: 0.58rem;
+  line-height: 0.58rem ;
+  background: #DF3E0E;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px ;
+  cursor: pointer;
+}
+.classify-content .classify-mian {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  margin: 0.16rem 0;
+  font-size: 14px ;
+}
+.classify-content .classify-mian .mian-left {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  float: left;
+}
+.classify-content .classify-mian .mian-right {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  width: 0.6rem;
+  background: url(../image/right.png) right center no-repeat;
+  float: right;
+  will-change: transform;
+  transition-duration: .3s;
+  transition-timing-function: ease-in;
+  cursor: pointer;
+}
+.classify-content .classify-mian .revert {
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  background-position: center;
 }
