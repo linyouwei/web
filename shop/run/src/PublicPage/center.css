@@ -126,6 +126,15 @@
   width: 0.76rem;
   top: 0.3rem;
 }
+#doc-body .order-content .status-content .status-list .status-icon .num {
+  position: absolute;
+  right: -0.24rem;
+  top: -0.1rem;
+  height: .2rem;
+  line-height: .2rem;
+  text-align: center;
+  color: #df3e0f;
+}
 #doc-body .order-content .status-content .status-list .status-type {
   text-align: center;
   margin-top: 1.2rem;

@@ -1,0 +1,33 @@
+#doc-body .nowrap-color {
+  height: 0.2rem;
+}
+#doc-body .info-content {
+  padding: 0 0.32rem;
+  height: 0.88rem;
+  font-size: 14px;
+  position: relative;
+}
+#doc-body .info-content .info-list {
+  background: url(../image/right.png) center right no-repeat;
+  height: .88rem;
+  line-height: .88rem;
+  border-bottom: 1px solid #ccc;
+}
+#doc-body .info-content .head-pic {
+  position: absolute;
+  top: .15rem;
+  right: .72rem;
+  height: .6rem;
+  width: .6rem;
+  background: url(../image/user_headimage.png) no-repeat;
+  background-size: 100%;
+  border-radius: 50%;
+}
+#file {
+  width: 100%;
+  position: absolute;
+  height: .88rem;
+  top: 0;
+  opacity: 0;
+  z-index: 1000;
+}

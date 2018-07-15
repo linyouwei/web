@@ -3,16 +3,14 @@ $(function(){
     var shop = getParams.shop;
     var login = getParams.login;
     var originalhref = $('#header a').attr('href');
-    console.log(originalhref);
     $('#header a').attr('href',originalhref+'?shop='+shop);
     var originalhref = $('.register-btn a').attr('href');
-    console.log(originalhref);
     $('.register-btn a').attr('href',originalhref+'?shop='+shop);
     var originalhref = $('.forget-btn a').attr('href');
-    console.log(originalhref);
     $('.forget-btn a').attr('href',originalhref+'?shop='+shop);
     var storage = window.localStorage;
     var today = new Date().getTime();
+    console.log(today);
    $('#login-container').inputValidate({
         submit: {
             query: '#requestSubmit'
@@ -32,15 +30,15 @@ $(function(){
         params.password = $('#requestPassword').val();
         params.areaCode = '86';
         toggleLoading(true);
-        var local_path = 'http://localhost:1200/';
-        ajaxRequest(local_path+'/api/user/login', params, 'post', function (data) {
+        var domain = 'http://localhost:1300';
+        ajaxRequest(domain +'/api/user/login', params, 'post', function (data) {
             toggleLoading(false);
             if (typeof storage === 'object') {
                 try {
                     storage.id_shopCookie = data.data.id;
                     storage.token_shopCookie = data.data.token;
                     storage.token_time = today;
-                    window.location.href = '/shop/PublicPage/center.html?shop='+shop;
+                    window.location.href = '/view/PublicPage/center.html?shop='+shop;
                 } catch (e) {
                     Storage.prototype._setItem = Storage.prototype.setItem;
                     Storage.prototype.setItem = function() {};
@@ -51,10 +49,6 @@ $(function(){
             toggleLoading(false);
             defaultErrorHandler(error, obj);
         }, submitBtn);
-
-
-
     });
-
-
 });
+

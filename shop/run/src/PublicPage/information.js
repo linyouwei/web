@@ -50,7 +50,7 @@ $(function(){
         window.location.href = '/view/PublicPage/login.html?shop='+shop;
     }).on('click','.head-portrait',function(e){
         e.stopPropagation();
-        window.location.href = '/view/PublicPage/information.html?shop='+shop;
+        window.location.href = '/view/PublicPage/login.html?shop='+shop;
     })
 
 });
