@@ -45,19 +45,19 @@
             </div>
             <div class="nowrap-color"></div>
             <div class="status-content flex-direction-row">
-                <div class="status-list flex-1" >
+                <div class="status-list flex-1" data-status="0" >
                     <div class="status-icon payment-icon "><div class="num"></div></div>
                     <div class="status-type">待付款</div>
                 </div>
-                <div class="status-list flex-1" >
+                <div class="status-list flex-1" data-status="1">
                     <div class="status-icon shipments-icon "><div class="num"></div></div>
                     <div class="status-type">待发货</div>
                 </div>
-                <div class="status-list flex-1">
+                <div class="status-list flex-1" data-status="2">
                     <div class="status-icon gathering-icon "><div class="num"></div></div>
                     <div class="status-type">待收货</div>
                 </div>
-                <div class="status-list flex-1" >
+                <div class="status-list flex-1"  data-status="3">
                     <div class="status-icon  aftersale-icon"><div class="num"></div></div>
                     <div class="status-type">退款/售后</div>
                 </div>
@@ -106,6 +106,8 @@
 </body>
 <script src="../../jslib/jquery/1.11.2/jquery.min.js"></script>
 <script src="../../jslib/bookstrap/bootstrap.js"></script>
+<script src="/uclbrt/ulite/ulite.js"></script>
+
 <script  type="text/javascript" src="../../run/src/common_zh_cn.js"></script>
 <script  type="text/javascript" src="../../run/src/common.js"></script>
 <script src="../../run/src/PublicPage/center.js"></script>

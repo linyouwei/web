@@ -13,6 +13,7 @@ $(function(){
     var cookieToken = storage.token_shopCookie;
     var centerLogin = $('.center-login-content');
     var statusContent = $('.status-content');
+    var orderContent = $('.order-content');
     if(cookieId){
         var params = {};
         params.id = cookieId;
@@ -51,6 +52,20 @@ $(function(){
     }).on('click','.head-portrait',function(e){
         e.stopPropagation();
         window.location.href = '/view/PublicPage/information.html?shop='+shop;
+    })
+    orderContent.on('click','.mine-order',function(e){
+        e.stopPropagation();
+        window.location.href = '/view/OrderPage/order.html?shop='+shop;
+    })
+    orderContent.on('click','.status-list',function(e){
+        e.stopPropagation();
+        var value = $(this).data('status');//获取自定义的属性
+        console.log(value);
+        if(value == 3){
+
+        }else{
+            window.location.href = '/view/OrderPage/order.html?shop='+shop+"&type="+value;
+        }
     })
 
 });

@@ -3,7 +3,10 @@ var lang = function(tag) {
     return window.languageResource[tag] || '';
 };
 $(function () {
-
+    //求body的高度，需要使用ulite.js框架
+    $('body').inputAction({
+        global: true
+    }).height($(window).height());
     // 常用正则
     window.commonRegexp = {
         'mobile': {

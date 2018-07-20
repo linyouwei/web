@@ -1,56 +1,81 @@
 $(function(){
     var getParams = getArgs();
     var shop = getParams.shop;
-    var originalHref = $('.back-home').attr('href');
-    console.log(shop);
-    if(shop){
-        $('.back-home').attr('href', originalHref + '?shop=' + shop);
-    }else{
-        $('.back-home').attr('href', 'javascript:history.back();');
-    }
+    var originalHref = $('#doc-header .info-back').attr('href');
+    $('#doc-header .info-back').attr('href', originalHref + '?shop=' + shop);
     var storage = window.localStorage;
     var cookieId = storage.id_shopCookie;
     var cookieToken = storage.token_shopCookie;
-    var centerLogin = $('.center-login-content');
-    var statusContent = $('.status-content');
-    if(cookieId){
+    var docBody = $('#doc-body');
+    if(cookieId) {
         var params = {};
         params.id = cookieId;
         params.token = cookieToken;
-        centerLogin.find('.already-logged').removeClass('hidden');
         var domain = 'http://localhost:1300';
-        ajaxRequest(domain+'/api/account/show', params, 'post', function(data) {
-            console.log(data);
+        ajaxRequest(domain + '/api/account/edit', params, 'post', function (data) {
             var info = data.data;
-            toggleLoading(false);
-            centerLogin.find('.mobile').text(info.mobile);
-            centerLogin.find('.head-portrait').css("background-image","url("+info.imgurl+")").css("background-size","100% 100%");
-            if(parseInt(info.waitToPay)>0){
-                statusContent.find('.payment-icon .num').text(parseInt(info.waitToPay));
-            };
-            if(parseInt(info.waitToPay)>0){
-                statusContent.find('.shipments-icon .num').text(parseInt(info.waitToSend));
-            };
-            if(parseInt(info.waitToPay)>0){
-                statusContent.find('.gathering-icon .num').text(parseInt(info.send));
-            };
-            if(parseInt(info.waitToPay)>0){
-                statusContent.find('.aftersale-icon .num').text(parseInt(info.refund));
-            };
+            docBody.find('.head-portrait').css('background-image',"url("+info.headpath+")").css("background-size","100% 100%");
+            docBody.find('.moblie').text(info.mobile);
+            docBody.find('.user').text(info.name);
+            var pc = new PhotoClip('#clipArea', {
+                size: 260,
+                outputSize: 640,
+                file: '#file',
+                view: '#view',
+                ok: '#clipBtn',
+                img: info.headpath,
+                loadStart: function() {
+                    toggleLoading(true);
+                },
+                loadComplete: function() {
+                    toggleLoading(false);
+                },
+                loadError:function(){
+                    toggleLoading(false);
+                },
+                done: function(dataURL) {
+                    var params = {};
+                    params.id = cookieId;
+                    params.token = cookieToken;
+                    params.baseImage = dataURL;
+                    console.log(dataURL);
+                    toggleLoading(true);
+                    ajaxRequest(domain+'/api/account/updateHead', params, 'post', function(data) {
+                        toggleLoading(false);
+                        var info = data.data;
+                        window.location.reload();//刷新页面
+                    }, function(error) {
+                        toggleLoading(false);
+                        toastr.error(typeof error.message === 'undefined' ? lang('serverbusy') : error.message);
+                    });
+                },
+                fail: function(msg) {
+                    alert(msg);
+                }
+            });
+            $('.change-headPic').on('click',function(){
+                $('.info-content-box').addClass('hidden');
+                $('.img-content').removeClass('hidden');
+//                $('.navbar-title').text(lang('info01'));
+                $('#doc-header .info-back').addClass('hidden');//显示info“个人信息”
+                $('#doc-header .img-back').removeClass('hidden');//隐藏箭头
+                $('#doc-header .info-compile').addClass('hidden');//隐藏右侧占用的div
+                $('#doc-header .img-compile').removeClass('hidden');//显示右侧占用的div（文字使用）
+                var documentheight = $(window).height();
+                console.log(documentheight);
+                var docheight = $('#doc-header').height();
+                var clipAreaheight = parseFloat(documentheight-docheight);
+                $('#clipArea').css('height',clipAreaheight);
+            });
+        }, function (error) {
 
-        }, function(error) {
-            toggleLoading(false);
-            toastr.error(typeof error.message === 'undefined' ? lang('serverbusy') : error.message);
         });
-    }else{
-        centerLogin.find('.unlisted').removeClass('hidden');
     }
-    centerLogin.on('click','.btn-login',function(e){
-        e.stopPropagation();
-        window.location.href = '/view/PublicPage/login.html?shop='+shop;
-    }).on('click','.head-portrait',function(e){
-        e.stopPropagation();
-        window.location.href = '/view/PublicPage/login.html?shop='+shop;
-    })
+    $('.login-out').on('click',function(){
+        storage.clear();
+        window.location.href = '/view/PublicPage/center.html?shop='+shop;
+    });
+
+
 
 });
