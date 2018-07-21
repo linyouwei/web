@@ -23,6 +23,9 @@ html {
   height: 8px;
   width: 100%;
 }
+.tabs-tab.is-active {
+  color: #df3e0e;
+}
 .form-horizontal .control-label {
   color: #727272;
   text-align: left;
@@ -201,6 +204,16 @@ html {
   top: .06rem;
   left: 50%;
   margin-left: -0.25rem;
+}
+#noLogining a {
+  position: absolute;
+  top: 50%;
+  height: .38rem;
+  width: 100%;
+  left: 0;
+  margin-top: -0.5rem;
+  line-height: .38rem;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #doc .navbar-fixed-bottom {

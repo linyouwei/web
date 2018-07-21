@@ -1,0 +1,18 @@
+.store-container {
+  background-color: #fff;
+  margin-bottom: .2rem;
+  font-size: 13px;
+  padding: 0 .32rem 0 .32rem;
+}
+.store-container .store-head {
+  height: .68rem;
+  border-bottom: 1px solid #ccc;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  position: relative;
+}
