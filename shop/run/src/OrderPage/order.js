@@ -54,14 +54,17 @@ $(function(){
             params.id = cookieId;
             params.token = cookieToken;
             var domain = 'http://localhost:1300';
+            toggleLoading(true);
             ajaxRequest(domain+'/api/account/order', params, 'post', function(data) {
+                toggleLoading(false);
                 var info = data.data;
                 var allOrderHTML = '', paymentOrderHTML = '',
-                    sendlOrderHTML = '', takeOrderHTML = '';
+                sendlOrderHTML = '', takeOrderHTML = '';
                 if(info.length>0){//有订单则进入订单模块
                     //遍历所有的订单
                     $.each(info,function(key,value){
                         var templateSingleOrderHtml = $($("#templateOrder").clone().html());
+                        templateSingleOrderHtml.attr('data-id',value.id);//增加该id，方便增删改订单
                         templateSingleOrderHtml.find(".store-head .store-name").html(value.shopname);
                         templateSingleOrderHtml.find(".store-head .store-status").html(shopStatus[value.status]);
                         templateSingleOrderHtml.find(".store-foot .store-check .choice").html(value.goods.length);
@@ -73,37 +76,41 @@ $(function(){
                         var templateAllGoodsHtml = '';
                         $.each(goodsList,function(goodsKey,goodsValue){
                             var templateSingleGoodsHtml = $($("#templateGoodsList").clone().html());
+                            templateSingleGoodsHtml.find(".store-goods-list").html(5555555);
                             //不能写成 templateSingleGoodsHtml.find(".store-goods-list .goods-picture-cover")
                             //因为store-good-list 不在templateSingleGoodsHtml中
                             templateSingleGoodsHtml.find(".goods-picture-cover").css("backgroud-image","url("+goodsValue.cover+")")
                                 .addClass("background-size","cover");
-                            templateSingleGoodsHtml.find(".represent-dec").html(goodsValue.name);
-                            templateSingleGoodsHtml.find(".represent-price").html(goodsValue.price);
-                            templateSingleGoodsHtml.find(".model").html(goodsValue.modelnumber);
-                            templateSingleGoodsHtml.find(".scalar").html(goodsValue.count);
+                            templateSingleGoodsHtml.find(".store-goods-list .represent-dec").html(goodsValue.name);
+                            templateSingleGoodsHtml.find(".store-goods-list .represent-price").html(goodsValue.price);
+                            templateSingleGoodsHtml.find(".store-goods-list .model").html(goodsValue.modelnumber);
+                            templateSingleGoodsHtml.find(".store-goods-list .scalar").html(goodsValue.count);
                             templateAllGoodsHtml += templateSingleGoodsHtml.prop('outerHTML');
                         });
                         templateSingleOrderHtml.find(".store-goods").html(templateAllGoodsHtml);
                         switch(parseInt(value.status)){
                             case 0:
-                                //待支付的订单
-                                paymentOrderHTML += templateSingleOrderHtml.prop('outerHTML');
+
                                 //还有和待支付相关的按钮（关闭订单、继续支付）
                                 templateSingleOrderHtml.find(".operation-close").closest(".operation-list").removeClass("hidden");
                                 templateSingleOrderHtml.find(".operation-pay").closest(".operation-list").removeClass("hidden");
+                                //待支付的订单
+                                paymentOrderHTML += templateSingleOrderHtml.prop('outerHTML');
                                 break;
                             case 1:
-                                //待发货的订单
-                                sendlOrderHTML += templateSingleOrderHtml.prop('outerHTML');
+
                                 //还有和待支付相关的按钮（关闭订单、继续支付）
                                 templateSingleOrderHtml.find(".operation-remind").closest(".operation-list").removeClass("hidden");
+                                //待发货的订单
+                                sendlOrderHTML += templateSingleOrderHtml.prop('outerHTML');
                                 break;
                             case 2:
-                                //待收货的订单
-                                takeOrderHTML += templateSingleOrderHtml.prop('outerHTML');
+
                                 //还有和待支付相关的按钮（关闭订单、继续支付）
                                 templateSingleOrderHtml.find(".operation-check").closest(".operation-list").removeClass("hidden");
                                 templateSingleOrderHtml.find(".operation-affirm").closest(".operation-list").removeClass("hidden");
+                                //待收货的订单
+                                takeOrderHTML += templateSingleOrderHtml.prop('outerHTML');
                                 break;
                             case 3:
                                 //已完成
@@ -123,10 +130,24 @@ $(function(){
                         }
                         allOrderHTML += templateSingleOrderHtml.prop('outerHTML');
                     });
-                    $("#all-order").html(allOrderHTML)
+
+
                 }else{//显示空状态页
-                   var allOrderHTML =  $("templateOrderEmpty").clone().html();
+                   allOrderHTML =  $("#templateOrderEmpty").clone().html();
                 }
+                $("#all-order").html(allOrderHTML);
+                if(paymentOrderHTML==''){
+                    paymentOrderHTML =  $("#templateOrderEmpty").clone().html();
+                }
+                $("#payment-order").html(paymentOrderHTML);
+                if(sendlOrderHTML==''){
+                    sendlOrderHTML =  $("#templateOrderEmpty").clone().html();
+                }
+                $("#send-order").html(sendlOrderHTML);
+                if(takeOrderHTML==''){
+                    var takeOrderHTML =  $("#templateOrderEmpty").clone().html();
+                }
+                $("#take-order").html(takeOrderHTML);
             }, function(error) { //后台请求不是200，就进入该方法
                 toastr.error(error.message);
             });
@@ -135,6 +156,17 @@ $(function(){
         }
     };
     showShopOrder();
+   $('#doc-body').on('click','.order-refresh',function(e){
+        e.stopPropagation();
+        showShopOrder();
+   });
+    //对多个按钮绑定同个事件
+    $('#doc-body').on('click','.store-container',function(e){
+        e.stopPropagation();
+        var orderId = $(this).data('id');
+        window.location.href = '/view/OrderPage/orderDetail.html?shop='+shop+'&orderId='+orderId;
+    });
+
 
 
 
