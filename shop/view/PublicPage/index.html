@@ -13,8 +13,8 @@ telephone=yes就开启了把数字转化为拨号链接，要开启转化功能�
     <title>我的</title>
 
     <link href="../../uclbrt/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../uclbrt/ulite/ulite.css">
     <link rel="stylesheet" type="text/css" href="../../jslib/swiper/swiper.min.css">
-
     <link href="../../run/src/PublicPage/index.css" rel="stylesheet">
     <link href="../../run/src/common.css" rel="stylesheet">
     <style>
@@ -35,147 +35,149 @@ telephone=yes就开启了把数字转化为拨号链接，要开启转化功能�
         <a href="/shop/PublicPage/center.html" class="pull-right navbar-icon"><span class="iconfont icon-chevronleft"></span></a>
     </div>
     <div id="doc-body">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="cover-images" src="../../run/src/image/changlian.jpg">
+        <div class="tabs ulite-js-tabs ulite-js-ripple-effect">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="cover-images" src="../../run/src/image/changlian.jpg">
+                    </div>
+                </div>
+                <div class="title-container">
+                    <div class="navbar-title typo-text-white-deep">畅联科技</div>
                 </div>
             </div>
-            <div class="title-container">
-                <div class="navbar-title typo-text-white-deep">畅联科技</div>
+            <div class="tabs-tab-bar">
+                <a href="#manage-panel" class="col-xs-6 tabs-tab is-active" id="personalCenter">店铺介绍</a>
+                <a href="#shop-panel" class="col-xs-6 tabs-tab shop-pogoing " id="shop-pogoing">掌柜优品</a>
             </div>
-        </div>
-        <ul class="nav nav-tabs">
-            <li class="col-xs-6 " id="personalCenter"><a data-toggle="tab" href="#manage-panel"  >店铺介绍</a></li>
-            <li class="col-xs-6 active" id="shop-pogoing"><a data-toggle="tab" href="#shop-panel" >掌柜优品</a></li>
-        </ul>
-        <div id="manage-panel" class="hidden">
-            <div class="panel">
-                <div class="panel-body" style="text-align: center">
-                    <!-- 右上角的义卖总额显示，收藏人数显示-->
-                    <div class="collect-container">
-                        <div class=" theme-text">
-                            <span>义卖总额：￥</span>
+            <div id="manage-panel" class="tabs-panel is-active" >
+                <div class="panel">
+                    <div class="panel-body" style="text-align: center">
+                        <!-- 右上角的义卖总额显示，收藏人数显示-->
+                        <div class="collect-container">
+                            <div class=" theme-text">
+                                <span>义卖总额：￥</span>
+                            </div>
+                            <div class="collect-box">
+                                <span class="collect"></span>人收藏
+                            </div>
                         </div>
-                        <div class="collect-box">
-                            <span class="collect"></span>人收藏
+                        <div class="main-pic-start">
+                            <div class="main-pic"></div>
                         </div>
-                    </div>
-                    <div class="main-pic-start">
-                         <div class="main-pic"></div>
-                    </div>
-                    <div class="vertical-margin nowrap-content"><span class="hotel-panel-contact">畅联科技</span></div>
-                    <div class="vertical-margin nowrap-content " style="height: 0.38rem;">
-                        <div class="sign-content">
-                            <div class="sign">物美价廉</div>
-                            <div class="sign">薄利多销</div>
-                            <div class="sign">放心购买</div>
+                        <div class="vertical-margin nowrap-content"><span class="hotel-panel-contact">畅联科技</span></div>
+                        <div class="vertical-margin nowrap-content " style="height: 0.38rem;">
+                            <div class="sign-content">
+                                <div class="sign">物美价廉</div>
+                                <div class="sign">薄利多销</div>
+                                <div class="sign">放心购买</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="content-outside-title"><span class="title-before"></span>店铺信息</div>
-            <div class="panel">
-                <div class="panel-body">
-                    <div class="vertical-margin nowrap-content">
-                        地址：
-                        <span class="stores-panel-address">广州市天河区彩频路9号</span>
-                    </div>
-                    <div class="vertical-margin nowrap-content">
-                        电话：
-                        <span class="stores-panel-mobile">13480251015</span>
-                    </div>
-                    <div class="stores-more-info hidden">
-                        <div class="vertical-margin nowrap-content">微信：<span class="stores-panel-wechat">38383838888</span></div>
-                        <div class="vertical-margin">简介：<span class="stores-description">畅联科技旗下专卖店，全场0.01元大甩卖！走过路过不要错过！！！</span></div>
-                    </div>
-                    <div class="stores-more-info-trigger text-center">
-                        <span class="iconfont"></span>
+                <div class="content-outside-title"><span class="title-before"></span>店铺信息</div>
+                <div class="panel">
+                    <div class="panel-body">
+                        <div class="vertical-margin nowrap-content">
+                            地址：
+                            <span class="stores-panel-address">广州市天河区彩频路9号</span>
+                        </div>
+                        <div class="vertical-margin nowrap-content">
+                            电话：
+                            <span class="stores-panel-mobile">13480251015</span>
+                        </div>
+                        <div class="stores-more-info hidden">
+                            <div class="vertical-margin nowrap-content">微信：<span class="stores-panel-wechat">38383838888</span></div>
+                            <div class="vertical-margin">简介：<span class="stores-description">畅联科技旗下专卖店，全场0.01元大甩卖！走过路过不要错过！！！</span></div>
+                        </div>
+                        <div class="stores-more-info-trigger text-center">
+                            <span class="iconfont"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="content-outside-title"><span class="title-before"></span>店长笔记</div>
-            <div class="panel">
-                <div class="panel-body" id="hotel-panel-special-container">
-                    <div class="hotel-panel-special">g h</div>
-                    <div class="hotel-panel-special-img">
-                        <img class="background-cover" style="width: 100%;" src="http://booking.uclbrt.com/api/uploads/noteImage/20170914/f63e6d5345af4ac833348325cc1ccfb3.jpg">
+                <div class="content-outside-title"><span class="title-before"></span>店长笔记</div>
+                <div class="panel">
+                    <div class="panel-body" id="hotel-panel-special-container">
+                        <div class="hotel-panel-special">g h</div>
+                        <div class="hotel-panel-special-img">
+                            <img class="background-cover" style="width: 100%;" src="http://booking.uclbrt.com/api/uploads/noteImage/20170914/f63e6d5345af4ac833348325cc1ccfb3.jpg">
+                        </div>
+                        <div class="vertical-margin"><a href="#" class="theme-text more-zhangGui-info">阅读全文</a></div>
                     </div>
-                    <div class="vertical-margin"><a href="#" class="theme-text more-zhangGui-info">阅读全文</a></div>
                 </div>
-            </div>
 
 
-        </div>
-        <div id="shop-panel">
-            <div class="content-outside-title"><span class="title-before"></span>商家推荐</div>
-            <div class="panel">
-                <div class="panel-body shop-panel-content" >
-                    <div id="shopContent" >
-                        <div class="col-xs-6 shopItem">
-                            <div class="shop-img-content">
-                                <div class="panel-shop-img">
-                                    <div class="shop-cover" style="background-image: url('http://booking.uclbrt.com/api/uploads/goodsImage/20170815/539eeeb2e4adedb795b36c6fb4f763b6.jpg'); background-size: cover; background-position: center center;"></div>
-                                    <div class="rummage-sale">义卖</div>
+            </div>
+            <div id="shop-panel" class="tabs-panel">
+                <div class="content-outside-title"><span class="title-before"></span>商家推荐</div>
+                <div class="panel">
+                    <div class="panel-body shop-panel-content" >
+                        <div id="shopContent" >
+                            <div class="col-xs-6 shopItem">
+                                <div class="shop-img-content">
+                                    <div class="panel-shop-img">
+                                        <div class="shop-cover" style="background-image: url('http://booking.uclbrt.com/api/uploads/goodsImage/20170815/539eeeb2e4adedb795b36c6fb4f763b6.jpg'); background-size: cover; background-position: center center;"></div>
+                                        <div class="rummage-sale">义卖</div>
+                                    </div>
                                 </div>
+                                <div class="layout-content"></div>
                             </div>
-                            <div class="layout-content"></div>
-                        </div>
-                        <div class="col-xs-6 shopItem">
-                            <div class="shop-img-content">
-                                <div class="panel-shop-img">
-                                    <div class="shop-cover" style="background-image: url('http://booking.uclbrt.com/api/uploads/goodsImage/20170815/539eeeb2e4adedb795b36c6fb4f763b6.jpg'); background-size: cover; background-position: center center;"></div>
-                                    <div class="rummage-sale">义卖</div>
+                            <div class="col-xs-6 shopItem">
+                                <div class="shop-img-content">
+                                    <div class="panel-shop-img">
+                                        <div class="shop-cover" style="background-image: url('http://booking.uclbrt.com/api/uploads/goodsImage/20170815/539eeeb2e4adedb795b36c6fb4f763b6.jpg'); background-size: cover; background-position: center center;"></div>
+                                        <div class="rummage-sale">义卖</div>
+                                    </div>
                                 </div>
+                                <div class="layout-content"></div>
                             </div>
-                            <div class="layout-content"></div>
                         </div>
+                        <div class="more-content"><div class="more">更多</div></div>
                     </div>
-                    <div class="more-content"><div class="more">更多</div></div>
                 </div>
-            </div>
-            <div class="content-outside-title"><span class="title-before"></span>热销商品</div>
-            <div class="panel">
-                <div class="panel-body hotsale-panel-content" >
-                    <div id="hotsaleContent" >
-                        <div class="col-xs-6 shopItem">
-                            <div class="shop-img-content">
-                                <div class="panel-shop-img">
-                                    <div class="shop-cover" style="background-image: url('http://booking.uclbrt.com/api/uploads/goodsImage/20170815/539eeeb2e4adedb795b36c6fb4f763b6.jpg'); background-size: cover; background-position: center center;"></div>
-                                    <div class="rummage-sale">义卖</div>
+                <div class="content-outside-title"><span class="title-before"></span>热销商品</div>
+                <div class="panel">
+                    <div class="panel-body hotsale-panel-content" >
+                        <div id="hotsaleContent" >
+                            <div class="col-xs-6 shopItem">
+                                <div class="shop-img-content">
+                                    <div class="panel-shop-img">
+                                        <div class="shop-cover" style="background-image: url('http://booking.uclbrt.com/api/uploads/goodsImage/20170815/539eeeb2e4adedb795b36c6fb4f763b6.jpg'); background-size: cover; background-position: center center;"></div>
+                                        <div class="rummage-sale">义卖</div>
+                                    </div>
                                 </div>
+                                <div class="layout-content"></div>
                             </div>
-                            <div class="layout-content"></div>
-                        </div>
-                        <div class="col-xs-6 shopItem">
-                            <div class="shop-img-content">
-                                <div class="panel-shop-img">
-                                    <div class="shop-cover" style="background-image: url('http://booking.uclbrt.com/api/uploads/goodsImage/20170815/539eeeb2e4adedb795b36c6fb4f763b6.jpg'); background-size: cover; background-position: center center;"></div>
-                                    <div class="rummage-sale">义卖</div>
+                            <div class="col-xs-6 shopItem">
+                                <div class="shop-img-content">
+                                    <div class="panel-shop-img">
+                                        <div class="shop-cover" style="background-image: url('http://booking.uclbrt.com/api/uploads/goodsImage/20170815/539eeeb2e4adedb795b36c6fb4f763b6.jpg'); background-size: cover; background-position: center center;"></div>
+                                        <div class="rummage-sale">义卖</div>
+                                    </div>
                                 </div>
+                                <div class="layout-content"></div>
                             </div>
-                            <div class="layout-content"></div>
                         </div>
+                        <div class="more-content"><div class="more">更多</div></div>
                     </div>
-                    <div class="more-content"><div class="more">更多</div></div>
                 </div>
-            </div>
-            <div id="doc-foot" class="navbar-fixed-bottom navbar-fixed-foot container">
-                <div class="shop-classify">
-                    <div class="icon"></div>
-                    <div class="introduce">分类</div>
-                </div>
-                <a class="shop-contact btn-link" href="tel:13480251015">
-                    <div class="icon"></div>
-                    <div class="introduce">联系卖家</div>
-                </a>
-                <div class="shop-enshrine">
-                    <div class="icon"></div>
-                    <div class="introduce">收藏</div>
+                <div id="doc-foot" class="navbar-fixed-bottom navbar-fixed-foot container">
+                    <div class="shop-classify">
+                        <div class="icon"></div>
+                        <div class="introduce">分类</div>
+                    </div>
+                    <a class="shop-contact btn-link" href="tel:13480251015">
+                        <div class="icon"></div>
+                        <div class="introduce">联系卖家</div>
+                    </a>
+                    <div class="shop-enshrine">
+                        <div class="icon"></div>
+                        <div class="introduce">收藏</div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="classify-content">
+        <div class="classify-content hidden">
             <div class="classify-box">
                 <div class="search-content">
                     <input type="text" name="" id="searchInfo" value="" placeholder="请输入商品名" />
