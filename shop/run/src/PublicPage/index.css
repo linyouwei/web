@@ -127,6 +127,9 @@
   background: url(../image/down.png) right center no-repeat;
   background-size: 100% 100%;
 }
+.revert {
+  transform: rotate(180deg);
+}
 #hotel-panel-special-container .hotel-panel-special-img {
   width: 100%;
   min-height: 3.5rem;

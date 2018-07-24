@@ -1,13 +1,14 @@
 // 多语言方法
-var lang = function(tag) {
+/*var lang = function(tag) {
     return window.languageResource[tag] || '';
-};
+};*/
 $(function () {
     //求body的高度，需要使用ulite.js框架
     $('body').inputAction({
         global: true
     }).height($(window).height());
     // 常用正则
+    /*
     window.commonRegexp = {
         'mobile': {
             'regexp': /^1[34578]{1}\d{9}$/,
@@ -41,6 +42,7 @@ $(function () {
             'emptyMessage': lang('common.11'),
         }
     };
+     */
 });
 
 var getArgs = function getArgs() {
