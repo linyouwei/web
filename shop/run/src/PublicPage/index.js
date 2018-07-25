@@ -91,22 +91,66 @@ $(function(){
         var params = {};
         params.id = cookieId;
         params.token = cookieToken;
-        ajaxRequest(domain+'/goods/show/'+shop, {}, 'get', function(data) {
+        ajaxRequest(domain+'/goods/show/'+shop, {}, 'post', function(data) {
             toggleLoading(false);
             var info = data.data;
-            $.each(info.label, function(key, value) {
-                var templateLabelHTML = $($('#templateLabel').clone().html());
-                templateLabelHTML.html(value);
-                LabelHTML += templateLabelHTML.prop('outerHTML');
+            var recommendHTML = '';
+            var hotSaleHTML = '';
+            var recommendNum = 0;
+            var hotSaleNum = 0;
+            $.each(info.recommend, function(key, value) {
+                var templateRecommendHTML = $($('#templateGoodsContent').clone().html());
+                templateRecommendHTML.attr('data-id',value.id);
+//                templateRecommendHTML.attr('data-recommend',value.recommend);
+                templateRecommendHTML.find('.shop-dec').text(value.name);
+                templateRecommendHTML.find('.shopPirce').text(parseFloat(value.price).toFixed(2));
+                templateRecommendHTML.find('.shopSales').text(value.sales);
+                var imgUrl = "http://booking.uclbrt.com/api/uploads/goodsImage/20170815/539eeeb2e4adedb795b36c6fb4f763b6.jpg";
+                templateRecommendHTML.find('.shop-cover').css({"background-image":"url("+imgUrl+")","background-size":"cover","background-position":"center"});
+
+                if(recommendNum >= 2){
+                    templateRecommendHTML.addClass('hidden');
+                }else{
+                    //第一个和第二框的下边框没有
+                    templateRecommendHTML.addClass('borderNone');
+                }
+                recommendHTML += templateRecommendHTML.prop("outerHTML");
+                recommendNum++;
             });
-            managePanel.find('.sign-content').html(LabelHTML);
-            $('#doc-foot .shop-contact').attr('href', 'tel:' + info.managermobile);
-            $('.swiper-container').on('click','.cover-images',function(e){
-                e.stopPropagation();
+            $.each(info.hotSale, function(key, value) {
+                var templateHotSaleHTML = $($('#templateGoodsContent').clone().html());
+                templateHotSaleHTML.attr('data-id',value.id);
+//                templateHotSaleHTML.attr('data-recommend',value.recommend);
+                templateHotSaleHTML.find('.shop-dec').text(value.name);
+                templateHotSaleHTML.find('.shopPirce').text(parseFloat(value.price).toFixed(2));
+                templateHotSaleHTML.find('.shopSales').text(value.sales);
+                var imgUrl = "http://booking.uclbrt.com/api/uploads/goodsImage/20170815/539eeeb2e4adedb795b36c6fb4f763b6.jpg";
+                templateHotSaleHTML.find('.shop-cover').css({"background-image":"url("+imgUrl+")","background-size":"cover","background-position":"center"});
+
+                if(hotSaleNum >= 2){
+                    templateHotSaleHTML.addClass('hidden');
+                }else{
+                    //第一个和第二框的下边框没有
+                    templateHotSaleHTML.addClass('borderNone');
+                }
+                hotSaleHTML += templateHotSaleHTML.prop("outerHTML");
+                hotSaleNum++;
             });
+            $("#shop-panel").find("#shopContent").html(recommendHTML);
+            $("#shop-panel").find("#hotsaleContent").html(hotSaleHTML);
         }, function(error) {
             toggleLoading(false);
         });
     }
+    getGoodsRequest();
+    $('.content-panel').on('click','.more',function(e){
+        e.stopPropagation();
+        $(this).text('没有更多了').closest('.content-panel').find('.shopItem').removeClass('hidden borderNone');
+    });
+    $('#shop-panel').on('click','.shopItem',function(e){
+        e.stopPropagation();
+        var btn = $(this);
+        window.location.href = '/view/details/details.html?shop='+shop+'&id='+btn.data('id')+'&index=1';
+    });
 
 })

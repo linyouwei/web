@@ -13,15 +13,10 @@ telephone=yes就开启了把数字转化为拨号链接，要开启转化功能�
     <title></title>
 
     <link href="../../uclbrt/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../../uclbrt/ulite/ulite.css">
+    <link rel="stylesheet" type="text/css" href="/uclbrt/ulite/ulite.css">
     <link rel="stylesheet" type="text/css" href="../../jslib/swiper/swiper.min.css">
     <link href="../../run/src/PublicPage/index.css" rel="stylesheet">
     <link href="../../run/src/common.css" rel="stylesheet">
-    <style>
-        .container{
-            border: 1px solid #396aff;
-        }
-    </style>
 
     <!--[if lt IE 9]>
     <script src="../../jslib/html5shiv/html5shiv.min.js"></script>
@@ -107,54 +102,16 @@ telephone=yes就开启了把数字转化为拨号链接，要开启转化功能�
             </div>
             <div id="shop-panel" class="tabs-panel">
                 <div class="content-outside-title"><span class="title-before"></span>商家推荐</div>
-                <div class="panel">
-                    <div class="panel-body shop-panel-content" >
-                        <div id="shopContent" >
-                            <div class="col-xs-6 shopItem">
-                                <div class="shop-img-content">
-                                    <div class="panel-shop-img">
-                                        <div class="shop-cover" style="background-image: url('http://booking.uclbrt.com/api/uploads/goodsImage/20170815/539eeeb2e4adedb795b36c6fb4f763b6.jpg'); background-size: cover; background-position: center center;"></div>
-                                        <div class="rummage-sale">义卖</div>
-                                    </div>
-                                </div>
-                                <div class="layout-content"></div>
-                            </div>
-                            <div class="col-xs-6 shopItem">
-                                <div class="shop-img-content">
-                                    <div class="panel-shop-img">
-                                        <div class="shop-cover" style="background-image: url('http://booking.uclbrt.com/api/uploads/goodsImage/20170815/539eeeb2e4adedb795b36c6fb4f763b6.jpg'); background-size: cover; background-position: center center;"></div>
-                                        <div class="rummage-sale">义卖</div>
-                                    </div>
-                                </div>
-                                <div class="layout-content"></div>
-                            </div>
-                        </div>
+                <div class="content-panel">
+                    <div class="content-panel-body shop-panel-content clearfix" >
+                        <div id="shopContent" ></div>
                         <div class="more-content"><div class="more">更多</div></div>
                     </div>
                 </div>
                 <div class="content-outside-title"><span class="title-before"></span>热销商品</div>
-                <div class="panel">
-                    <div class="panel-body hotsale-panel-content" >
-                        <div id="hotsaleContent" >
-                            <div class="col-xs-6 shopItem">
-                                <div class="shop-img-content">
-                                    <div class="panel-shop-img">
-                                        <div class="shop-cover" style="background-image: url('http://booking.uclbrt.com/api/uploads/goodsImage/20170815/539eeeb2e4adedb795b36c6fb4f763b6.jpg'); background-size: cover; background-position: center center;"></div>
-                                        <div class="rummage-sale">义卖</div>
-                                    </div>
-                                </div>
-                                <div class="layout-content"></div>
-                            </div>
-                            <div class="col-xs-6 shopItem">
-                                <div class="shop-img-content">
-                                    <div class="panel-shop-img">
-                                        <div class="shop-cover" style="background-image: url('http://booking.uclbrt.com/api/uploads/goodsImage/20170815/539eeeb2e4adedb795b36c6fb4f763b6.jpg'); background-size: cover; background-position: center center;"></div>
-                                        <div class="rummage-sale">义卖</div>
-                                    </div>
-                                </div>
-                                <div class="layout-content"></div>
-                            </div>
-                        </div>
+                <div class="content-panel">
+                    <div class="content-panel-body hotsale-panel-content clearfix" >
+                        <div id="hotsaleContent" ></div>
                         <div class="more-content"><div class="more">更多</div></div>
                     </div>
                 </div>
@@ -210,6 +167,30 @@ telephone=yes就开启了把数字转化为拨号链接，要开启转化功能�
     标签列表<!---->
     <script type="text/html" id="templateLabel">
         <div class="sign">
+        </div>
+    </script>
+    <script type="text/html" id="templateGoodsContent">
+        <div class="col-xs-6 shopItem">
+             <div class="shop-img-content">
+                <div class="panel-shop-img">
+                    <div class="shop-cover">
+                    </div>
+                    <div class="rummage-sale hidden"></div>
+                </div>
+              </div>
+        <div class="layout-content">
+            <div class="layout">
+                <div class="nowrap-content shop-dec"></div>
+                    <div class="nowrap-content">
+                        <div class="col-xs-6 shopPirce-content">
+                            <span>￥</span><span class="shopPirce"></span>
+                        </div>
+                        <div class="col-xs-6 shopSales-content">
+                            <span>销量</span><span class="shopSales"></span>
+                        </div>
+                    </div>
+            </div>
+        </div>
         </div>
     </script>
 
