@@ -11,7 +11,7 @@ $(function(){
     var storage = window.localStorage;
     var today = new Date().getTime();
     console.log(today);
-   $('#login-container').inputValidate({
+  /* $('#login-container').inputValidate({
         submit: {
             query: '#requestSubmit'
         },
@@ -21,7 +21,7 @@ $(function(){
             message: window.commonRegexp.password.message,
             emptyMessage: window.commonRegexp.password.emptyMessage
         }]
-    });
+    });*/
     //账号密码登陆
     $("#requestSubmit").click(function(){
         var submitBtn = $("#requestSubmit");
