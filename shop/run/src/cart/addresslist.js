@@ -10,9 +10,9 @@ $(function(){
     $('#noLogining a').attr('href', originalHref + '?shop=' + shop);
     var originalHref = $('#doc-header a').attr('href');
     if(goodsSkuId){
-        $('#doc-header a').attr('href', '/shop/cart/confirm.html?shop='+shop+'&num='+num+'&goodsSkuId='+goodsSkuId+'&typeId='+typeId);
+        $('#doc-header a').attr('href', '/view/cart/confirm.html?shop='+shop+'&num='+num+'&goodsSkuId='+goodsSkuId+'&typeId='+typeId);
     }else if(goodsSkuidarr){
-        $('#doc-header a').attr('href', '/shop/cart/confirm.html?shop='+shop+'&goodsSkuidarr='+goodsSkuidarr);
+        $('#doc-header a').attr('href', '/view/cart/confirm.html?shop='+shop+'&goodsSkuidarr='+goodsSkuidarr);
     }else{
         $('#doc-header a').attr('href', originalHref + '?shop=' + shop);
     }
