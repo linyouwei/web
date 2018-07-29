@@ -8,12 +8,10 @@
     <title>我的</title>
     <link rel="stylesheet" type="text/css" href="/uclbrt/ulite/ulite.css">
     <link href="/uclbrt/css/bootstrap.css" rel="stylesheet">
-    <link href="/run/src/details/details.css" rel="stylesheet">
     <link href="/run/src/common.css" rel="stylesheet">
+    <link href="/run/src/cart/confirm.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/jslib/toastr/2.1.2/toastr.min.css">
     <link rel="stylesheet" type="text/css" href="/jslib/swiper/swiper.min.css">
-
-
 
     <!--[if lt IE 9]>
     <script src="/jslib/html5shiv/html5shiv.min.js"></script>
@@ -24,121 +22,98 @@
 <body>
 <div id="doc" class="container">
         <div id="doc-header" class="navbar-cart">
-            <a href="/view/PublicPage/center.html" class="back-home info-back"></a>
+            <a href="/view/details/details.html" class="back-home info-back"></a>
             <a href="javascript:void(0);" class="back-home img-back hidden"></a>
             <div class="navbar-title">确认购买</div>
             <div class="compile info-compile"></div>
         </div>
     <div id="doc-body" >
-    <div class="tabs ulite-js-tabs ulite-js-ripple-effect">
-        <div class="banner-container">
-            <div class="swiper-container">
-                <div class="swiper-wrapper"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-            <div class="sales-container">
-                <span>销量&nbsp;</span><span class="sales-volume"></span>
-            </div>
-        </div>
-    </div>
-    <div class="tabs ulite-js-tabs ulite-js-ripple-effect">
-        <div class="referral-container">
-            <div class="referral"></div>
-            <div class="referral-price">￥<span class="price"></span></div>
-        </div>
-    </div>
-    <div class="tabs ulite-js-tabs ulite-js-ripple-effect">
-        <div class="gift-container">
-            <div class="gift-box">请选择商品型号</div>
-            <div class="gift-right"></div>
-        </div>
-    </div>
-    <div class="tabs ulite-js-tabs ulite-js-ripple-effect">
-        <div class="details-container">
-            <div class="details-head">商品详情</div>
-            <div class="details"></div>
-        </div>
-    </div>
-    <div id="doc-foot" class="navbar-fixed-top navbar-fixed-foot container">
-        <a class="shop-contact btn-link">
-            <div class="icon"></div>
-            <div class="introduce">联系卖家</div>
-        </a>
-        <div class="shop-classify">
-            <div class="icon"></div>
-            <div class="introduce">进店</div>
-        </div>
-        <div class="shop-enshrine">
-            <div class="icon"></div>
-            <div class="introduce">收藏</div>
-        </div>
-        <div class="shop-foot">
-            <div class="addToCart">加入购物车</div>
-            <div class="buyImmediately">立即购买</div>
-        </div>
-    </div>
-</div>
-    <div id="mask-body" class="modal-box hidden"></div>
-    <div class="version-content">
-        <div class="version-box">
-            <div class="version-head">
-                <div class="version-portrait">
-                    <div class="portrait"></div>
+        <div class="address-container">
+            <div class="notYet hidden ">请填写收货地址</div>
+            <div class="alreadly hidden">
+                <div class="alreadly-container">
+                    <div class="alreadly_top">
+                        <div class="name"></div>
+                        <div class="number"></div>
+                    </div>
+                    <div class="alreadly_bottom">
+                        <div class="tacitly hidden">[默认]</div>
+                        <div class="address nowrap-content"></div>
+                    </div>
                 </div>
-                <div class="version-pirce">
+            </div>
+        </div>
+        <div id="shopOrderList"></div>
+    </div>
+    <div id="doc-foot" class="navbar-fixed-top navbar-fixed-foot container ">
+        <div class="select"></div>
+        <div class="all-pay-container">
+            <div class="all-pay">
+                <span>应付总额：</span><span class="all-price">222</span>
+            </div>
+            <div class='carriage'>共<span class="num">1</span>件商品</div>
+        </div>
+        <div class="accounts" id="pay">
+            <span>提交订单</span>
+        </div>
+    </div>
+ </div>
+<script type="text/html" id="templateOrder">
+    <div class="store-container">
+        <div class="store-head">
+            <div class="store-name"></div>
+        </div>
+        <div class="store-goods"></div>
+        <div class="store-send-content">
+            <div class="store-send">运费</div>
+            <div class="store-send-pay">
+                <span>￥</span><span class="pay"></span>
+            </div>
+        </div>
+        <div class="store-message-content">
+            <div class="store-send">留言</div>
+            <div class="store-message">
+                <input name="" placeholder="给卖家留言"/>
+            </div>
+        </div>
+        <div class="store-foot">
+            <div class="store-pay">
+                <span>合计：</span><span class="pay"></span>
+            </div>
+            <div class="store-check">
+                <span>已选</span><span class="choice">1</span>件商品
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="templateGoodsList">
+    <div class="store-goods-list">
+        <div class="goods-img-content">
+            <div class="goods-picture">
+                <div class="goods-picture-cover"></div>
+            </div>
+        </div>
+        <div class="goods-represent">
+            <div class="represent-top">
+                <div class="represent-dec"></div>
+            </div>
+            <div class="represent-foot">
+                <div class="represent-price">
                     <span>￥</span><span class="price"></span>
                 </div>
-                <div class="version-close">&times;</div>
-                <div class="rummage-sale hidden">该价格中将有<span class="rummage"></span>元用于捐赠慈善机构</div>
-            </div>
-            <div class="version-size-content">
-                <div class="size">尺寸类型</div>
-                <div class="size-content"></div>
-                <div class="size">数量</div>
-                <div class="sum-content">
-                    <div class="sum">
-                        <div class="reduceSum">-</div>
-                        <input type="" name="shopSum" id="shopSum" value="1" />
-                        <div class="addSum">+</div>
-                    </div>
-                    <div class="repertory-content">
-                        <span>库存&nbsp;</span><span class="repertory"></span>
-                    </div>
+                <div class="sum">
+                    <span>x</span><span class="scalar">1</span>
                 </div>
             </div>
-            <div class="version-foot">
-                <div id="addToCart">加入购物车</div>
-                <div id="buyImmediately">立即购买</div>
-            </div>
         </div>
     </div>
-    <div>33333</div>
-    <div>33333</div>
-    <div>33333</div>
-    <div>33333</div>
-    <div>33333</div>
-    <div>33333</div>
-    <div>33333</div>
-    <div>33333</div>
-    <div>33333</div>
-    <div>33333</div>
-    <div>33333</div>
-    <div>33333</div>
-    <div>33333</div>
-<div id="loadingContainer" class="hidden">
-    <div id="loading">
-        <div class="cssload-loader">
-            <div class="cssload-inner cssload-one"></div>
-            <div class="cssload-inner cssload-two"></div>
-            <div class="cssload-inner cssload-three"></div>
-        </div>
-    </div>
-</div>
-<script type="text/html" id="templateSwiper">
-    <div class="swiper-slide"><div class="cover-images"></div></div>
 </script>
-<script type="text/html" id="templateSizeContent">
-    <div class="size-list"></div>
+<script type="text/html" id="templateOrderEmpty">
+    <div class="centeral-container vertical-middle-block">
+        <div class="centeral-content vertical-middle-block-cell">
+            <div class="col-xs-12 text-center theme-text" >没有选择商品</div>
+        </div>
+    </div>
 </script>
 </body>
 <script src="/jslib/jquery/1.11.2/jquery.min.js"></script>
@@ -153,6 +128,6 @@
 <script type="text/javascript" src="/jslib/upload/PhotoClip.js"></script>
 <script  type="text/javascript" src="/run/src/common_zh_cn.js"></script>
 <script  type="text/javascript" src="/run/src/common.js"></script>
-<script src="/run/src/details/details.js"></script>
+<script src="/run/src/cart/confirm.js"></script>
 
 </html>
