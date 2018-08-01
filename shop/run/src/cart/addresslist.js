@@ -57,4 +57,14 @@ $(function(){
     }else{
         $('#noLogining').removeClass('hidden');
     }
+    $('#doc-header').on('click','.addAddress',function(e){
+        e.stopPropagation();
+        if(goodsSkuId){//如果是一个商品
+            window.location.href = '/view/cart/address.html?shop='+shop+'&num='+num+'&goodsSkuId='+goodsSkuId+'&typeId='+typeId;
+        }else if(goodsSkuidarr){//如果是多个商品
+            window.location.href = '/view/cart/address.html?shop='+shop+'&goodsSkuidarr='+goodsSkuidarr;
+        }else{
+            window.location.href = '/view/cart/address.html?shop='+shop;
+        }
+    });
 })
