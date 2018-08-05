@@ -6,13 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   <title></title>
-  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="../qrmaster_ulite.css" rel="stylesheet">
 
-
-  <!--[if lt IE 9]>
-  <script src="js/html5shiv.min.js"></script>
-  <script src="js/respond.min.js"></script>
-  <![endif]-->
 
 </head>
 <body>
@@ -24,13 +19,11 @@
     <div class="form-group">
       <label class="control-label" for="uname">用户名：</label>
       <input class="form-control" id="uname" type="text">
-      <span class="help-block">用户名长度在6~12位之间</span>
     </div>
 
     <div class="form-group">
       <label class="control-label" for="upwd">密码：</label>
       <input class="form-control" id="upwd" type="password">
-      <span class="help-block">密码中必须包含数字、字母</span>
     </div>
 
     <!--Bootstrap编码规范中指定：单选/复选按钮要放在label中-->
@@ -159,17 +152,7 @@
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br>
-<script src="js/jquery-1.11.3.js"></script>
-<script src="js/bootstrap.js"></script>
-<script>
-  (function () {
-    var s = document.createElement("script");
-    s.onload = function () {
-      bootlint.showLintReportForCurrentDocument([]);
-    };
-    s.src = "js/bootlint.js";
-    document.body.appendChild(s)
-  })();
-</script>
+<script src="../jquery-1.11.3.js"></script>
+<script src="../ulite.js"></script>
 </body>
 </html>
