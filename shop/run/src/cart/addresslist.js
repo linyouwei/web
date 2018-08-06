@@ -10,9 +10,9 @@ $(function(){
     $('#noLogining a').attr('href', originalHref + '?shop=' + shop);
     var originalHref = $('#doc-header a').attr('href');
     if(goodsSkuId){
-        $('#doc-header a').attr('href', '/shop/cart/confirm.html?shop='+shop+'&num='+num+'&goodsSkuId='+goodsSkuId+'&typeId='+typeId);
+        $('#doc-header a').attr('href', '/view/cart/confirm.html?shop='+shop+'&num='+num+'&goodsSkuId='+goodsSkuId+'&typeId='+typeId);
     }else if(goodsSkuidarr){
-        $('#doc-header a').attr('href', '/shop/cart/confirm.html?shop='+shop+'&goodsSkuidarr='+goodsSkuidarr);
+        $('#doc-header a').attr('href', '/view/cart/confirm.html?shop='+shop+'&goodsSkuidarr='+goodsSkuidarr);
     }else{
         $('#doc-header a').attr('href', originalHref + '?shop=' + shop);
     }
@@ -57,4 +57,14 @@ $(function(){
     }else{
         $('#noLogining').removeClass('hidden');
     }
+    $('#doc-header').on('click','.addAddress',function(e){
+        e.stopPropagation();
+        if(goodsSkuId){//如果是一个商品
+            window.location.href = '/view/cart/address.html?shop='+shop+'&num='+num+'&goodsSkuId='+goodsSkuId+'&typeId='+typeId;
+        }else if(goodsSkuidarr){//如果是多个商品
+            window.location.href = '/view/cart/address.html?shop='+shop+'&goodsSkuidarr='+goodsSkuidarr;
+        }else{
+            window.location.href = '/view/cart/address.html?shop='+shop;
+        }
+    });
 })

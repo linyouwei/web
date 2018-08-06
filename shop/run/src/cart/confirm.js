@@ -185,9 +185,61 @@ $(function(){
             window.location.href = '/view/cart/addresslist.html?shop='+shop+'&goodsSkuidarr='+goodsSkuidarr;
         }
     });
-    $('#pay').on('click',function(){
+    $('#pay').on('click',function(e){
         e.stopPropagation();
-        var addressId = $('#doc-body .address-container').data('addressid');
+//        var addressId = $('#doc-body .address-container').data('addressid');
+        var addressId = '13';
+        var order = [];//一个父订单的所有店铺的商品数组
+        var price = 0;
+        $('#doc').find('.store-container').each(function(){//遍历一个父订单的所有子订单（实际是不同的店铺）
+            var sonOrder ={};
+            var goods = [];
+            sonOrder.shopId = $(this).data('id');
+            sonOrder.payment = $(this).find('.store-foot .pay').text();
+            sonOrder.message = $(this).find('.store-message-content').val();
+            sonOrder.addressId = addressId;
+            price += parseFloat(sonOrder.payment); // 支付金额
+            $(this).find('.store-goods-list').each(function(){
+                var singleGoods = {}
+                singleGoods.goodsSkuId = $(this).data('goodsskuid');//商品所属id
+                singleGoods.num = $(this).find('.scalar').text();//商品的数量
+                goods.push(singleGoods);
+
+            })
+            sonOrder.goods = goods;
+            order.push(sonOrder)
+        })
+        var params = {};
+        params.id = cookieId;
+        params.token = cookieToken;
+        params.orders = order;
+        params.addressId = addressId;
+        params.expressfee = expressfee;
+        ajaxRequest(domain+'/order/add', params, 'post', function(data) {
+            var ordernumber = data.data.orderNumber;
+            var info = data.data.info
+            if (isWechat()){
+                var backHost = 'booking.uclbrt.com';
+                if(window.typeParam == 'third'){
+                    backHost = 'test.uclbrt.com';
+                }
+                var backUrl = '';
+                if(typeId){
+                    backUrl = 'http://' + backHost + domain+'/client/Wechat/getPayPage.html?shop='+shop+':num='+num+':goodsSkuId='+goodsSkuId+':typeId='+typeId+':order='+ordernumber+':price='+price.toFixed(2);
+                }else{
+                    backUrl = 'http://' + backHost + domain+'/client/Wechat/getPayPage.html?shop='+shop+':order='+ordernumber+':price='+price.toFixed(2);
+                }
+                window.location.href = 'http://cz.uclbrt.com/Wechat/WechatLoginPage/auth.html?ai='+info.ai+'&asc='+info.asc+'&scope=base&url=' + encodeURIComponent(backUrl);
+            } else {
+                if(typeId){
+                    window.location.href = '/view/pay/pay.html?shop='+shop+'&num='+num+'&goodsSkuId='+goodsSkuId+'&typeId='+typeId+'&order='+ordernumber+'&price='+price.toFixed(2);
+                }else{
+                    window.location.href = '/view/pay/pay.html?shop='+shop+'&order='+ordernumber+'&price='+price.toFixed(2);
+                }
+            }
+        }, function(error) {
+        });
+
     });
 
 })
