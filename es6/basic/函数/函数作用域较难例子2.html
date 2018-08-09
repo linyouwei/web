@@ -11,6 +11,17 @@
        }
        foo()
    </script>
+    <script>
+        var x = 1;
+        function foo(x, y) {
+            var x = 3;
+            y();
+            function y(){
+                console.log(x);
+            }
+        }
+        foo()
+    </script>
 
 </head>
 <body>
