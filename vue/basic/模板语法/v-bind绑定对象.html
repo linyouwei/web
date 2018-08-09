@@ -15,23 +15,21 @@
 <div id="app">
     <!--输入框input绑定<div>,通过绑定的数据bbb去控制-->
     <label for="r1">修改颜色</label>
-    <input type="checkbox" v-model="bbb" id="r1">
+    <input type="checkbox" v-model="classObject.aaa" id="r1">
     <br><br>
-    <div v-bind:class="{'aaa': bbb}">
+    <div v-bind:class="classObject">
        123
     </div>
-
-    <!-- 完整语法 -->
-    <a v-bind:href="url"></a>
-    <!-- 缩写 -->
-    <a :href="url"></a>
 </div>
 
 <script>
     new Vue({
         el: '#app',
         data: {
-            bbb: false
+            classObject:{
+                'aaa': false
+            }
+
         }
     })
 </script>
