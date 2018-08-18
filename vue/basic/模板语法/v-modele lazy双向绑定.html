@@ -12,11 +12,10 @@
 <body>
 <div id="app">
     <p>{{message}}</p>
-    <button v-on:click="reverseMessage">反转字符串</button>
-    <!-- 完整语法 -->
-    <!--<a v-on:click="doSomething"></a>-->
-    <!-- 缩写 -->
-    <!--<a @click="doSomething"></a>-->
+<!--
+    当添加.lazy修饰符之后，改变input框中的内容并不会使得span中的内容发生变化，此时当输入框失去焦点后触发change事件.控制台中输出相应内容。
+-->
+    <input v-model.lazy="message" @change="show">
 </div>
 
 <script>
@@ -26,9 +25,9 @@
             message:'abc'
         },
         methods:{
-            reverseMessage:function(){
-                this.message = this.message.split('').reverse().join('')
-            }
+            show(){
+            alert(this.message);
+    }
         }
     })
 </script>

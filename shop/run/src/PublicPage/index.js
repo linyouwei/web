@@ -36,6 +36,13 @@ $(function(){
             $('#mask-body').removeClass('hidden');
         });
     });
+    $('#mask-body').on('click',function(e){
+        e.stopPropagation();
+        $('.classify-content').stop(true).animate({width:'0'},100,function(){
+            $('#mask-body').addClass('hidden');
+            $('html,body').removeClass('overflowHiden');
+        });
+    });
     toggleLoading(true);
     var docBody = $('#doc-body');
     var managePanel = $('#manage-panel');
@@ -151,6 +158,16 @@ $(function(){
         e.stopPropagation();
         var btn = $(this);
         window.location.href = '/view/details/details.html?shop='+shop+'&id='+btn.data('id')+'&index=1';
+    });
+    $('.classify-mian').on('click',function(e){
+        e.stopPropagation();
+        var btn = $(this);
+        var mianRight = btn.find('.mian-right');
+        var shopContent =btn.closest('.shop-content').find('.shop-list-content');
+        var otherMianRight = btn.closest('.shop-content').siblings('.shop-content').find('.mian-right');
+        var otherShopContent = btn.closest('.shop-content').siblings('.shop-content').find('.shop-list-content');
+        otherMianRight.removeClass('revert');
+        otherShopContent.slideUp();
     });
 
 })
